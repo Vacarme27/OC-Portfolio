@@ -1,0 +1,20 @@
+{
+    "technologies": [
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "FLEXBOX" },
+      { "name": "GRID" },
+      { "name": "SCSS" },
+      { "name": "WORDPRESS" },
+      { "name": "ELEMENTOR" },
+      { "name": "JAVASCRIPT" },
+      { "name": "GITHUB" },
+      { "name": "NPM" },
+      { "name": "YARN" },
+      { "name": "REACT" },
+      { "name": "REDUX" },
+      { "name": "SWAGGER" },
+      { "name": "FIGMA" },
+      { "name": "VITE.JS" }
+    ]
+  }
