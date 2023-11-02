@@ -2,15 +2,32 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
 }
 
-header {
-    background-color: black;
+header {    
+    width: 100%;
+    height: 80px;    
+    background-color: transparent;
     color: white;
     position: fixed;
     top: 0;
+    left: 0;    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
     left: 0;
     width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #007FFF);
 }
 
 /* Navbar */
@@ -19,6 +36,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    height: 50px;
 }
 
 #logo {
@@ -49,6 +67,7 @@ nav {
     list-style: none;
     justify-content: space-between;
     align-items: center;
+    list-style: none;
     width: 100%;
     gap: 20px;
 }
@@ -56,17 +75,22 @@ nav {
 #menu a {
     text-decoration: none;
     color: white;
-    font-size: 18px;    
+    font-size: 18px;
+    transition: font-size 0.4s;
 }
 
-.contact-link {
-    margin-left: auto;
+#menu a:hover {
+    font-size: 25px;
 }
 
 .menu-icon {
     display: none;
     font-size: 24px;
     cursor: pointer;
+}
+
+.contact-link {
+    margin-left: auto;
 }
 
 @media (max-width: 768px) {
@@ -132,4 +156,83 @@ nav {
     right: 10px;
     font-size: 24px;
     cursor: pointer;
+}
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.integrateur {
+    background: linear-gradient(90deg, #00f, #0f0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: fillColor 4s linear infinite;
+    background-size: 200% 100%;
+}
+
+@keyframes fillColor {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.arrow-down {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin: 5px 0;
+    opacity: 0.5;
+}
+
+.arrow-1 {
+    animation: fadeIn 2s ease infinite 0.25s;
+}
+
+.arrow-2 {
+    animation: fadeIn 2s ease infinite 0.5s;
+}
+
+.arrow-3 {
+    animation: fadeIn 2s ease infinite 0.75s;
+}
+
+@keyframes fadeIn {
+    0% {        
+        opacity: 0.2;
+    }
+    33% {
+        opacity: 0.8;
+    }
+    66% {
+        opacity: 0.8;
+    }
+    100% {        
+        opacity: 0.2;        
+    }
 }
