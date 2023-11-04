@@ -30,6 +30,13 @@ header::before {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #007FFF);
 }
 
+.marginbot50{
+    margin-bottom: 50px;
+}
+.margintop80{
+    margin-top: 80px;
+}
+
 /* Navbar */
 nav {
     display: flex;
@@ -158,9 +165,6 @@ nav {
     cursor: pointer;
 }
 /* MAIN */
-section{
-    margin-bottom: 50px;
-}
 
 main {
     display: flex;
@@ -411,4 +415,66 @@ footer {
     text-decoration: none;
     color: white;
     font-size: 16px;
+}
+
+/* CONTACT */
+
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;    
+}
+.form{    
+    background: #1D1F26;
+    padding: 20px;
+    border-radius: 10px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    background: #1D1F26;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+textarea, input {
+    background-color: black;
+}
+
+textarea::placeholder {
+    color: gray;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+#form > div {
+    margin: 10px 0;
+}
+
+.submit-btn {
+    background-color: #007FFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #005bcc;
+}
+
+.message-container, .name-container, .email-container{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap : 10px;    
+    margin-bottom: 10px; 
 }
