@@ -494,6 +494,11 @@ footer {
 
 textarea, input {    
     background-color: var(--primary-background);
+    color:var(--primary-color);
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
     border:none;
     border-radius: 5px;
     letter-spacing: 1px;
@@ -504,9 +509,8 @@ textarea, input {
 label{
     margin: auto 10px;
 }
-::placeholder{
-    padding-left: 10px;
-    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+::placeholder{    
+    font-size: 12px;
 }
 
 #form {
