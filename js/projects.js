@@ -45,6 +45,7 @@ const projectTitle = document.createElement("h2");
       const demoLink = document.createElement("a");
       demoLink.href = project.demo;
       demoLink.textContent = "Voir la démo";
+      demoLink.target = "_blank";
       linksContainer.appendChild(demoLink);
     }
 
@@ -52,6 +53,7 @@ const projectTitle = document.createElement("h2");
       const githubLink = document.createElement("a");
       githubLink.href = project.github;
       githubLink.textContent = "Lien GitHub";
+      githubLink.target = "_blank";
       linksContainer.appendChild(githubLink);
     }
 

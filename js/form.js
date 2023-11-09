@@ -25,6 +25,10 @@ form.addEventListener("submit", e =>{
         nameInput.value = "";
         emailInput.value = "";
         messageInput.value = "";
+
+        setTimeout(() => {
+            submitBtn.innerText = "Envoyer";
+        }, 3000);
     })
     .catch(function(error) {
         console.error('Erreur lors de l\'envoi de l\'e-mail', error);
