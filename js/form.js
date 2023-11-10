@@ -35,5 +35,3 @@ form.addEventListener("submit", e =>{
         submitBtn.innerText = "Le message n'a pas pu être envoyé";
     });
 });
-
-
